@@ -63,8 +63,7 @@ namespace ESourcing.Products
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ESourcing.Products v1"));
+              
             }
 
             app.UseHttpsRedirection();
@@ -77,6 +76,8 @@ namespace ESourcing.Products
             {
                 endpoints.MapControllers();
             });
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ESourcing.Products v1"));
         }
     }
 }

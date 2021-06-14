@@ -23,7 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sourcing", "Sourcing", "{0E
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A698FC9D-06AD-4CA9-8B45-3CE17A35B917}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESourcing.Sourcing", "ESourcing.Sourcing\ESourcing.Sourcing.csproj", "{D7B5BBBB-4CE8-495B-83FB-6AB7BA13C8DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESourcing.Sourcing", "ESourcing.Sourcing\ESourcing.Sourcing.csproj", "{D7B5BBBB-4CE8-495B-83FB-6AB7BA13C8DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBusRabbitMQ", "EventBusRabbitMQ\EventBusRabbitMQ.csproj", "{5D3558F6-0E18-4FF0-9F85-972C666773E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,18 @@ Global
 		{D7B5BBBB-4CE8-495B-83FB-6AB7BA13C8DA}.Release|x64.Build.0 = Release|Any CPU
 		{D7B5BBBB-4CE8-495B-83FB-6AB7BA13C8DA}.Release|x86.ActiveCfg = Release|Any CPU
 		{D7B5BBBB-4CE8-495B-83FB-6AB7BA13C8DA}.Release|x86.Build.0 = Release|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Debug|x64.Build.0 = Debug|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Release|x64.ActiveCfg = Release|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Release|x64.Build.0 = Release|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +99,7 @@ Global
 		{1CFCAF8D-1C55-410D-A55D-D53CEB8D5F66} = {AEBB9784-67D5-4CDA-B034-E9DDB9EF6DCE}
 		{0EF031A6-A829-476C-BF99-543D741E9D07} = {AEBB9784-67D5-4CDA-B034-E9DDB9EF6DCE}
 		{D7B5BBBB-4CE8-495B-83FB-6AB7BA13C8DA} = {0EF031A6-A829-476C-BF99-543D741E9D07}
+		{5D3558F6-0E18-4FF0-9F85-972C666773E5} = {1CC8974E-EF02-4098-ADFA-A53586393A83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEFBDCAD-B15B-42BC-9E9F-078FBDBAADA3}
