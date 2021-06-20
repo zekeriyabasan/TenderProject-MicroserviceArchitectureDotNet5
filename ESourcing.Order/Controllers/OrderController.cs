@@ -32,7 +32,7 @@ namespace ESourcing.Order.Controllers
             var orders = await _mediator.Send(query);
             if (orders.Count() == decimal.Zero) return NotFound();
 
-            return Ok(orders);
+            return Ok(orders); 
          }
 
         [HttpPost]
