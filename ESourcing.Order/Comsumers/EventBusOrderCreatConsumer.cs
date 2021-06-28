@@ -39,7 +39,7 @@ namespace ESourcing.Order.Comsumers
             channel.QueueDeclare(queue: EventBusConstants.OrderCreateQueue, durable: false, exclusive: false, autoDelete: false, arguments: null);
 
             var consumer = new EventingBasicConsumer(channel);
-
+            
             consumer.Received += ReceivedEvent;
 
             channel.BasicConsume(queue: EventBusConstants.OrderCreateQueue, autoAck: true, consumer: consumer);

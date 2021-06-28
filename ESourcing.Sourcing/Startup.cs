@@ -98,7 +98,7 @@ namespace ESourcing.Sourcing
                 return new DefaultRabbitMQPersistentConnection(factory, retryCount, logger);
             });
 
-            
+            services.AddSingleton<EventBusRabbitMQProducer>();
 
             #endregion
 

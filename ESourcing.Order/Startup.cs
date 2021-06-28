@@ -1,3 +1,5 @@
+using ESourcing.Order.Comsumers;
+using ESourcing.Order.Extensions;
 using EventBusRabbitMQ;
 using EventBusRabbitMQ.Producer;
 using Microsoft.AspNetCore.Builder;
@@ -77,7 +79,7 @@ namespace ESourcing.Order
                 return new DefaultRabbitMQPersistentConnection(factory, retryCount, logger);
             });
 
-
+            services.AddSingleton<EventBusOrderCreateConsumer>();
 
             #endregion
 
@@ -96,11 +98,14 @@ namespace ESourcing.Order
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
+            app.useEventBusListener();
+
             app.UseSwagger();
             app.UseSwaggerUI(c=>
             {
